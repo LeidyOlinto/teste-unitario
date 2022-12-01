@@ -4,9 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": ""
+    "test": "node tests/unit_test.test.js",
+    "server": "node /server/server.js",
+    "test:server": "node tests/server_http.test.js",
+    "mocha": "./node_modules/mocha/bin/mocha tests/"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^10.1.0"
+  }
 }
